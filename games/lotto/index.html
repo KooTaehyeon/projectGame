@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="lotto.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>로또</title>
+  </head>
+  <body>
+    <div class="game">
+      <!-- 게임 시작 전 -->
+      <div class="game_setting">
+        <input type="text" class="game_input" placeholder="번호 입력" />
+        <input type="text" class="game_money" placeholder="배팅할 금액" />
+        <button type="button" class="game_btn">게임시작!</button>
+      </div>
+
+      <!-- 게임 시작 후 -->
+      <div class="startGame">
+        <div class="startGame_menu">
+          <h3>당첨번호</h3>
+          <ul class="number"></ul>
+          <h3>보너스</h3>
+          <div class="bonus"></div>
+          <div class="result">
+            <div class="myInfo">
+              <h4>내 번호</h4>
+              <span></span>
+            </div>
+            <div class="myGain">
+              <h4>맞은 번호</h4>
+            </div>
+            <div class="myGetPoint">
+              <h4>흭득한 포인트</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

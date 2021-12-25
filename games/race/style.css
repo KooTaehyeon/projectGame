@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#finish {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 680px;
+  width: 100px;
+  height: 100px;
+}
+
+
+#chunsik {
+  position: absolute;
+  left: 50px;
+  width: 430px;
+  top: -100px;
+}
+#btn{
+  width: 50px;
+  height: 50px;
+}
+#btnChun #chunsik {
+  display: none;
+}
+
+#btnChun.active #chunsik {
+  display: block;
+}
+
+/* 
+.btnChun .chunsik . {
+  display: block;
+} */
+
+.frends {
+  position: absolute;
+  top: 405px;
+  left: 120px;
+
+}
+
+.rionBtn {
+  background-image: url(rionBtn.PNG);
+  background-size: 80px;
+  width: 80px;
+  height: 80px;
+
+}
+
+.rionBtn:active {
+  background-image: url(rionBtn2.png);
+}
+.kakaoimg{
+  height: 70px;
+}
+.apech {
+  background-image: url(apechBtn.PNG);
+  background-size: 80px;
+  width: 80px;
+  height: 80px;
+}
+
+.apech:active {
+  background-image: url(apechBtn2.PNG);
+}
+
+.muzi {
+  background-image: url(muziBtn.png);
+  background-size: 80px;
+  width: 80px;
+  height: 80px;
+}
+
+.muzi:active {
+  background-image: url(muziBtn2.PNG);
+}
+
+.neo {
+  background-image: url(neoBtn.PNG);
+  background-size: 80px;
+  width: 80px;
+  height: 80px;
+}
+
+.neo:active {
+  background-image: url(neoBtn2.PNG);
+}
+
+.status {
+  margin: 10px;
+  /* top: 550px;
+  left: 550px; */
+}

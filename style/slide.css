@@ -1,0 +1,74 @@
+#slideBar {
+  position: relative;
+}
+
+.slideGames {
+  width: 100%;
+  height: 40vh;
+  border: 1px solid;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide_li {
+  display: none;
+  width: 60vw;
+  height: 100%;
+  border: 1px solid;
+  transition: 1s;
+  position: absolute;
+}
+.box0 {
+  display: inline-block;
+  left: -100vw;
+}
+.box1 {
+  display: inline-block;
+  left: -40vw;
+}
+
+.box2 {
+  display: inline-block;
+  left: 20vw;
+  z-index: 998;
+}
+
+.box3 {
+  display: inline-block;
+  left: 80vw;
+}
+
+.box4 {
+  display: inline-block;
+  left: 140vw;
+}
+
+.slide_btn {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  height: 5vh;
+  background-color: rgba(0, 0, 0, 0.212);
+  top: calc(100% - 5vh);
+  font-size: 4vw;
+  z-index: 999;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0);
+  border: unset;
+  color: rgba(128, 128, 128, 0.623);
+  font-size: 1.5vw;
+}
+.slide_img{
+  width: 100%;
+  height: 100%;
+}
+.slide_li > span {
+  opacity: 100;
+  font-weight: bold;
+  position: absolute;
+  right: 500px;
+  font-size: 30px;
+}

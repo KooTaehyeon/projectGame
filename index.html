@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Machine</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style/index.css" />
+    <script src="./app/main.js" defer></script>
+    <script src="./app/filter.js" defer></script>
+    <script src="./app/chat.js" defer></script>
+    <script src="./app/nav.js" defer></script>
+    <script src="./app/slide.js" defer></script>
+    <script src="./app/calcul.js" defer></script>
+  </head>
+  <body>
+    <!-- 네비바 -->
+    <section class="navbar">
+      <nav class="gameMain">
+        <div class="hearderTop">
+          <div class="hearderLeft">
+            <div class="ham">
+              <span class="fi"></span>
+              <span class="th"></span>
+              <span class="se"></span>
+            </div>
+            <!-- <div class="leftHumbuger"><i class="fas fa-bars"></i></div> -->
+            <div class="leftLogo">
+              <a href="nav.html"><i class="fab fa-wizards-of-the-coast"></i></a>
+            </div>
+          </div>
+          <div class="hearderRight">
+            <div class="rightSingin">
+              <a href="">로그인</a>
+            </div>
+            <p>|</p>
+            <div class="rightSingup">
+              <a href="">회원가입</a>
+            </div>
+          </div>
+        </div>
+        <hr style="padding: 0; margin: 0" />
+        <nav class="mainNav">
+          <div class="navMain">
+            <div class="navUl">
+              <div class="navNews">
+                새소식
+                <span class="btnaction"></span>
+                <span class="btnaction"></span>
+                <span class="btnaction"></span>
+                <span class="btnaction"></span>
+                <ul class="newsUi">
+                  <div class="underline"></div>
+                  <li class="s1">
+                    <a href=""><span>공지사항</span></a>
+                  </li>
+                  <li class="s2">
+                    <a href=""><span>업데이트소식</span></a>
+                  </li>
+                  <a href="">
+                    <li class="s3"><span>이벤트</span></li>
+                  </a>
+                </ul>
+              </div>
+
+              <div class="navNews">
+                가이드
+                <span class="btnaction"></span>
+                <span class="btnaction"></span>
+                <span class="btnaction"></span>
+                <span class="btnaction"></span>
+                <ul class="newsUi">
+                  <div class="underline"></div>
+                  <li class="s1">
+                    <a href=""><span>소개</span></a>
+                  </li>
+                  <li class="s2">
+                    <a href=""><span>게임소개</span></a>
+                  </li>
+                  <li class="">
+                    <a href=""><span>""</span></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="navNews">
+                사전
+                <span class="btnaction"></span>
+                <span class="btnaction"></span>
+                <span class="btnaction"></span>
+                <span class="btnaction"></span>
+                <ul class="newsUi">
+                  <div class="underline"></div>
+
+                  <li class="s1">
+                    <a href=""><span>사전</span></a>
+                  </li>
+                  <li class="">
+                    <a href=""><span></span></a>
+                  </li>
+                  <li class="">
+                    <a href=""><span></span></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="navNews">
+                충전소
+                <span class="btnaction"></span>
+                <span class="btnaction"></span>
+                <span class="btnaction"></span>
+                <span class="btnaction"></span>
+                <ul class="newsUi">
+                  <div class="underline"></div>
+                  <li class="s1">
+                    <a href="#"><span>충전환전</span></a>
+                  </li>
+                  <li class="s2">
+                    <a href="#"><span>캐쉬샵</span></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="navNews">
+                커뮤니티
+                <span class="btnaction"></span>
+                <span class="btnaction"></span>
+                <span class="btnaction"></span>
+                <span class="btnaction"></span>
+                <ul class="newsUi">
+                  <div class="underline"></div>
+                  <li class="s1">
+                    <a href="#"><span>자유게시판</span></a>
+                  </li>
+                  <li class="s2">
+                    <a href="#"><span>Q&A</span></a>
+                  </li>
+                  <li class="s3">
+                    <a href="#"><span>1:1게시판</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mainSerch">
+              <div class="serchS">검색</div>
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+        </nav>
+      </nav>
+      <nav class="navmainSub">
+        <div class="navMainUl_sub">
+          <div class="subhead">
+            <div class="ham2">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+          <hr style="padding: 0; margin: 0" />
+          <div class="navNews_sub">
+            <span>새소식</span>
+            <ul class="navsubMenu">
+              <li class="ss1">
+                <span><a href="">공지사항</a></span>
+              </li>
+              <li class="ss2">
+                <span><a href="">업데이트소식</a></span>
+              </li>
+              <li class="ss3">
+                <span><a href="">이벤트</a></span>
+              </li>
+            </ul>
+          </div>
+          <div class="navGurid_sub">
+            <span>가이드</span>
+            <ul class="navsubMenu">
+              <span>가이드</span>
+              <li class="ss1"><a href="">안내글</a></li>
+              <li class="ss2"><a href="">게임소개</a></li>
+              <li class=""></li>
+            </ul>
+          </div>
+          <div class="navRefer_sub">
+            <span>사전</span>
+            <ul class="navsubMenu">
+              <li class="ss1"><a href=""> 안내</a></li>
+              <li class=""></li>
+              <li class=""></li>
+            </ul>
+          </div>
+          <div class="navShop_sub">
+            <span>환전소</span>
+            <ul class="navsubMenu">
+              <li class="ss1"><a href=""> 환전</a></li>
+              <li class="ss2"><a href=""> 캐쉬샵</a></li>
+            </ul>
+          </div>
+          <div class="navCommunity_sub">
+            <span>커뮤니티</span>
+            <ul class="navsubMenu">
+              <li class="ss1"><a href=""> 자유게시판</a></li>
+              <li class="ss2"><a href=""> Q&A</a></li>
+              <li class="ss3"><a href=""> 1:1 문의</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="subMenu_back"></div>
+      </nav>
+    </section>
+
+    <!-- 슬라이드 -->
+    <section id="slideBar">
+      <div class="slideGames">
+        <div class="slide_li box0">
+          <img class="slide_img" src="./asset/img/up&down.jpg" alt="" />
+          <p>업&다운</p>
+        </div>
+        <div class="slide_li box1">
+          <img class="slide_img" src="./asset/img/rsp.png" alt="" />
+          <p>가위바위보</p>
+        </div>
+        <div class="slide_li box2">
+          <img class="slide_img" src="./asset/img/woup.png" alt="" />
+          <p>강화확률</p>
+        </div>
+        <div class="slide_li box3">
+          <img class="slide_img" src="./asset/img/catch.gif" alt="" />
+          <p>춘식이잡기</p>
+        </div>
+        <div class="slide_li box4">
+          <img class="slide_img" src="./asset/img/race.jpg" alt="" />
+          <p>경마프렌즈</p>
+        </div>
+        <div class="slide_li box5">
+          <img class="slide_img" src="./asset/img/lotto.jpg" alt="" />
+          <p>로또</p>
+        </div>
+        <div class="slide_li box6">
+          <img class="slide_img" src="./asset/img/baseball.jpg" alt="" />
+          <p>숫자야구</p>
+        </div>
+      </div>
+    </section>
+  <!-- 필터 -->
+  <section class="game_filter">
+    <div class="filter" id="filterGame">
+      <div class="filter_main">
+        <h1 class="filter_title">게임 분류</h1>
+        <div class="filter_btn">
+          <button class="filter_btn_1 btns" id="btnAll">전체</button>
+          <button class="filter_btn_2 btns" id="btns1">확률</button>
+          <button class="filter_btn_3 btns" id="btns2">캐쥬얼</button>
+          <button class="filter_btn_4 btns" id="btns3">스포츠</button>
+        </div>
+        <div class="search_box">
+          <input type="search" class="filterSearch" placeholder="게임을 입력하세요" />
+          <button class="searchBtn">검색</button>
+        </div>
+        <div class="filter_main_container">
+          <a class="filter_box sport" id="baseball">
+            <img src="./asset/img/baseball.jpg" />
+            <span>숫자야구</span>
+            <div class="description">
+              <p>추억의 숫자야구 던져!!!</p>
+            </div>
+          </a>
+
+          <a class="filter_box percentage" id="lotto">
+            <img src="./asset/img/lotto.jpg" />
+            <span>로또</span>
+            <div class="description">
+              <p>인생역전 가자!!!</p>
+            </div>
+          </a>
+
+          <a class="filter_box casual" id="catch">
+            <img src="./asset/img/catch.gif" />
+            <span>춘식이잡기</span>
+            <div class="description">
+              <p>농작물 피해주는 춘식이를 잡자!!!</p>
+            </div>
+          </a>
+
+          <a class="filter_box sport" id="race">
+            <img src="./asset/img/race.jpg" />
+            <span>카카오경마</span>
+            <div class="description">
+              <p>달려라 달려~~~!!!</p>
+            </div>
+          </a>
+
+          <a class="filter_box percentage" id="upDown">
+            <img src="./asset/img/up&down.jpg" />
+            <span>Up&Down</span>
+            <div class="description">
+              <p>업앤다운~~~ 업앤다운~~~</p>
+            </div>
+          </a>
+
+          <a class="filter_box percentage" id="RSP">
+            <img src="./asset/img/rsp.png" />
+            <span>가위바위보</span>
+            <div class="description">
+              <p>가위바위보슬보슬 개미똥꼬멍멍이가 노래를한 다람쥐가 소풍을간다!!!</p>
+            </div>
+          </a>
+
+          <a class="filter_box percentage" id="woup">
+            <img src="./asset/img/woup.png" />
+            <span>강화게임</span>
+            <div class="description">
+              <p>단순 확률 게임!!!</p>
+            </div>
+          </a>
+
+          <a class="filter_box casual" id="carrot">
+            <img src="./asset/img/carrot.png" />
+            <span>당근뽑기</span>
+            <div class="description">
+              <p>개미들을 피해 당근만 쏘옥 뽑아요~~~!!!</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 챗봇  -->
+    <aside>
+      <div class="aside_wrap">
+        <div class="game_ext">
+          <span class="game_ex_title">게임 설명 봇</span>
+          <div class="geme_ex_text">
+            <p>
+              게임 이름을 채팅창에 <br />
+              적으시면 설명해 드립니다
+            </p>
+          </div>
+          <div class="inp_box">
+            <input type="text" id="gameConsole" class="game_ex_inp" placeholder="게임이름" />
+            <button type="button" id="txtBtn" class="game_ex_btn">입력</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="ext_toggle">
+        <form>
+          <button type="button" id="extBtn" class="ext_btn"></button>
+        </form>
+      </div>
+    </aside>
+  </section>
+    <!-- 게임기 -->
+    <section class="game_machine" id="game_machine">
+      <div class="game_right">
+        <div class="right_logo"></div>
+        <div class="arrow_button">
+          <span class="arrow_text"></span>
+          <div class="row_button">
+            <button type="button" class="row_left arrow" id="beforeGame">
+              <i class="fas fa-arrow-left"></i>
+              <!-- <span class="button_text">이전게임</span> -->
+            </button>
+            <button type="button" class="row_right arrow" id="nextGame">
+              <i class="fas fa-arrow-right"></i>
+              <!-- <span class="button_text">다음게임</span> -->
+            </button>
+          </div>
+          <div class="cell_button">
+            <button type="button" class="cell_up arrow" id="calculate">
+              <i class="fas fa-arrow-up"></i>
+              <!-- <span class="button_text">계산기</span> -->
+            </button>
+            <button type="button" class="cell_down arrow">
+              <i class="fas fa-arrow-down"></i>
+              <!-- <span class="button_text">게임종류</span> -->
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="game_center">
+        <div id="title" class="title">
+          <h3>Welcome to Game</h3>
+        </div>
+        <div class="view">
+          <iframe id="gameView" style="height: 100%" src="./games/lotto" frameborder="0" class="game_select"></iframe>
+        </div>
+        <h3>Acon</h3>
+      </div>
+      <div class="game_left">
+        <div class="left_button">
+          <button type="button" class="btn btnA">A</button>
+          <button type="button" class="btn btnB">B</button>
+        </div>
+      </div>
+    </section>
+    <!-- 계산기 -->
+    <div class="calculate">
+      <span class="cancle_btn">X</span>
+      <table id="casio">
+        <thead>
+          <tr>
+            <td colspan="4" id="casioHead"></td>
+          </tr>
+          <tr>
+            <td colspan="4" id="casioInput"></td>
+          </tr>
+        </thead>
+
+        <tbody class="table_body">
+          <tr>
+            <td colspan="3">
+              <button class="Btn" id="casioReset">C</button>
+            </td>
+            <td><button class="casio_num Btn">/</button></td>
+          </tr>
+          <tr class="casio_body">
+            <td><button class="casio_num Btn">7</button></td>
+            <td><button class="casio_num Btn">8</button></td>
+            <td><button class="casio_num Btn">9</button></td>
+            <td><button class="casio_num Btn">*</button></td>
+          </tr>
+          <tr class="casio_body">
+            <td><button class="casio_num Btn">4</button></td>
+            <td><button class="casio_num Btn">5</button></td>
+            <td><button class="casio_num Btn">6</button></td>
+            <td><button class="casio_num Btn">+</button></td>
+          </tr>
+          <tr class="casio_body">
+            <td><button class="casio_num Btn">1</button></td>
+            <td><button class="casio_num Btn">2</button></td>
+            <td><button class="casio_num Btn">3</button></td>
+            <td><button class="casio_num Btn">-</button></td>
+          </tr>
+          <tr class="casio_body">
+            <td colspan="2"><button class="casio_num Btn">0</button></td>
+            <td><button class="casio_num Btn">.</button></td>
+            <td><button class="Btn" id="casioResult">=</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  
+  </body>
+</html>

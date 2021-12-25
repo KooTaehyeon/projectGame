@@ -1,0 +1,46 @@
+
+  .up_down{
+    text-align: center;
+  }
+  .up_down >h1{
+    font-size: 40px;
+    animation: h1_name 1s infinite;
+  }
+  @keyframes h1_name{
+    50%{
+      color: white;
+    }
+    100%{
+      color: black;
+    }
+  }
+  .num_name{
+    font-size: 22px;
+    font-weight: 800;
+  }
+  .up_down_img{
+    width: 30vw;
+    height: 20vw;
+    animation: imgup 2s infinite;
+    padding: 50px;
+  }
+  @keyframes imgup{
+      25%{
+        transform: scale(1.1);
+      }100%{
+        transform: scale(1.2);
+      }
+  }
+  .result_name{
+    font-size: 20px;
+  }
+  .up_down> button{
+    background-color: whitesmoke;
+    border: rgb(76, 83, 88) 1px solid;
+    transition: all 3s;
+  }
+  .up_down> button:hover{
+    background-color: steelblue;
+    border: rgb(3, 140, 253) 1px solid;
+  }
+

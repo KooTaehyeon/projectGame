@@ -1,0 +1,63 @@
+/* 프레임 */
+#RSP {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 450px;
+  border: 4px solid black;
+  border-radius: 10px;
+  background-color: cornsilk;
+}
+/* img 관련 */
+.rsp_pic {
+  width: 50%;
+  height: 60%;
+}
+.pic {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.active {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+img {
+  width: 95%;
+  height: 80%;
+  object-fit: cover;
+}
+
+/* 버튼 관련 */
+.rsp_btn {
+  width: 40%;
+  font-size: 5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: crimson;
+}
+.start_btn {
+  margin: 15px;
+  padding: 10px;
+  border: unset;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 5px black;
+}
+
+/* 점수 관련 */
+#coin {
+  width: 50px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="RSP.css" />
+    <script src="./RSP.js" defer></script>
+    <title>RSP</title>
+  </head>
+  <body>
+    <!-- 가위 바위 보  -->
+
+    <section id="RSP">
+      <div game_coin>
+        <i class="fab fa-bitcoin"></i>
+        <input id="coin" type="text" value="100" style="text-align: right" />
+      </div>
+      <div class="rsp_pic">
+        <div class="pic" id="rockPic">
+          <img src="./rock.JPG" alt="" />
+        </div>
+        <div class="pic" id="scissorsPic">
+          <img src="./scissors.JPG" alt="" />
+        </div>
+        <div class="pic active" id="paperPic">
+          <img src="./paper.JPG" alt="" />
+        </div>
+      </div>
+      <div class="rsp_btn">
+        <i class="far fa-hand-rock btn" id="rock"></i>
+        <i class="far fa-hand-peace btn" id="scissors"></i><i class="far fa-hand-paper btn" id="paper"></i>
+      </div>
+      <div class="rsp_start"><button class="start_btn">Start</button></div>
+    </section>
+  </body>
+</html>

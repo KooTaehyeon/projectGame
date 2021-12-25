@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+
+body {
+    text-align: center;
+  
+}
+.mains{
+    position: relative;
+    width: 25vw;
+   height: 20vw;
+   text-align: center;
+}
+h1 {
+    position: relative;
+    left: 33%;
+    margin: 5px;
+    font-size: 23px;
+    width: 30vw;
+}
+
+.square {
+    width: 120px;
+    height: 80px;
+    border-style: solid;
+    border-color: #000;
+    border-width: 2px;
+}
+
+.btn_str {
+    font-size: 15px;
+    cursor: pointer;
+    width: 20vw;
+    border-radius: 10px;
+    position: relative;
+   left: 1%;
+}
+
+#deatBox {
+    width: 500px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+#deatBox h2 {
+    border: solid;
+    width: 300px;
+    font-weight: 900;
+}
+.chunsig {
+    animation: chun 2s infinite;
+}
+@keyframes chun{ 
+25%{
+    color: white;
+}50%{
+   color: black;
+}
+
+}
+
+/* 춘식이가 나오는 곳. 배경 이미지, flex로 정렬,
+margin으로 화면 가운데 정렬 */
+.grid {
+    background: url("./춘식이img/카카오.jpg");
+    background-size: 96% 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 500px;
+    height: 336px;
+    margin: 10px auto;
+}
+
+.kakao_chun {
+    background-image: url("./춘식이img/춘식이.gif");
+    background-size: 100% 90%;
+    cursor: url('./춘식이img/cursor.jpg'),auto;
+
+}
+.kakao_chun:active{
+   background-image: url("./춘식이img/아픈춘식.png");
+   background-size: 100% 90%;
+}

@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gainsboro;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+.game {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  border-radius: 8px;
+  background: url(./img/background.png) center/cover no-repeat;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game__btn {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: wheat;
+  font-size: 25px;
+  transition: all 300ms ease-in;
+}
+.game__btn:hover {
+  transform: scale(1.1);
+}
+
+.game__timer {
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid black;
+  background-color: wheat;
+  font-size: 24px;
+  visibility: hidden;
+  transform: translateX();
+}
+
+.game__score {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  margin: auto;
+  margin-top: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: salmon;
+  font-size: 26px;
+  visibility: hidden;
+}
+
+.game__field {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.game__field img {
+  transition: all 100ms ease-in;
+  cursor: pointer;
+}
+
+.game__field img:hover {
+  transform: scale(1.1);
+}
+
+.pop-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 400px;
+  height: 200px;
+  border-radius: 8px;
+  background-color: rgb(0, 0, 0, 0.5);
+  transform: translateX(-50%);
+}
+
+.pop-up.hidden {
+  visibility: hidden;
+}
+
+.pop-up__btn {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 8px;
+  background-color: wheat;
+  font-size: 25px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 300ms ease-in;
+  z-index: 10;
+}
+
+.pop-up__btn:hover {
+  transform: scale(1.1);
+}
+
+.pop-up__message {
+  color: white;
+  font-size: 28px;
+}
+
+.game__point {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 28px;
+}
