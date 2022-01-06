@@ -47,6 +47,7 @@ searchBtn.addEventListener('click', function (e) {
       return;
     } else if (boxGame[i].innerText.includes(`${search.value}`)) {
       filterE[i].style.display = 'block';
+  
     } else {
       filterE[i].style.display = 'none';
     }

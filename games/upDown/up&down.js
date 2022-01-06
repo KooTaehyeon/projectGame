@@ -13,7 +13,6 @@ console.log('정답:' + randoms);
 randomBtn.onclick = function () {
   console.log(inp.value);
   if (count == 8) {
-    console.log('아1');
     img.src = './up&down img/실패.jpg';
     result_name.innerText = '모든 기회를 사용하셧습니다.';
     return;
