@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>게임</title>
+    <link rel="stylesheet" href="./indexs.css" />
+  </head>
+
+  <body>
+    <div class="nav">
+      <div class="ham">
+        <span class="fi"></span>
+        <span class="th"></span>
+        <span class="se"></span>
+      </div>
+      <div class="nav_memu">
+        <span>새소식</span>
+        <span>가이드</span>
+        <span>충전소</span>
+        <span>커뮤니티</span>
+      </div>
+    </div>
+    <main class="main_one">
+      <span class="main_title"> 다양한 게임이 준비되어 있습니다. </span>
+      <div class="main_search">
+        <input type="text" id="" class="main_search_inp" placeholder="게임이름을 검색하세요" />
+        <button type="button" id="" class="main_search_btn">쿡</button>
+      </div>
+      <div class="main_one_img"><img src="./asset/img/game_gg.png" alt="게임기" /></div>
+    </main>
+    <main class="main_two">
+      <div class="main_two_in">
+        <div class="main_two_gameBtn">
+          <button class="filter_btn_1 gameBtn" id="btnAll">전체</button>
+          <button class="filter_btn_2 gameBtn" id="btns1">확률</button>
+          <button class="filter_btn_3 gameBtn" id="btns2">캐쥬얼</button>
+          <button class="filter_btn_4 gameBtn" id="btns3">스포츠</button>
+        </div>
+        <div class="filter_main_container">
+          <a class="filter_box sport" id="baseball">
+            <div>
+              <span>숫자야구</span>
+              <img src="./asset/img/img_baseball.png" />
+            </div>
+          </a>
+          <a class="filter_box percentage" id="lotto">
+            <div>
+              <span>로또</span>
+              <img src="./asset/img/img_lotto.png" />
+            </div>
+          </a>
+
+          <a class="filter_box casual" id="catch">
+            <div>
+              <span>춘식이잡기</span>
+              <img src="./asset/img/img-chunsic.png" />
+            </div>
+          </a>
+
+          <a class="filter_box sport" id="race">
+            <div>
+              <span>카카오경마</span>
+              <img src="./asset/img/img-race.png" />
+            </div>
+          </a>
+
+          <a class="filter_box percentage" id="upDown">
+            <div>
+              <span>Up&Down</span>
+              <img src="./asset/img/img-up&down.png" />
+            </div>
+          </a>
+
+          <a class="filter_box percentage" id="RSP">
+            <div>
+              <span>가위바위보</span>
+              <img src="./asset/img/img-rps.png" />
+            </div>
+          </a>
+
+          <a class="filter_box percentage" id="woup">
+            <div>
+              <span>강화게임</span>
+              <img src="./asset/img/img-weapon.png" />
+            </div>
+          </a>
+
+          <a class="filter_box casual" id="carrot">
+            <div>
+              <span>당근뽑기</span>
+              <img src="./asset/img/img-carrot.png" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+    <main class="main_three">
+      <div class="view">
+        <div class="view_text">Game Start</div>
+        <iframe id="gameView" src="./games/catch/" frameborder="0" class="game_select"></iframe>
+      </div>
+    </main>
+    <main class="main_four">
+      <div class="controller"><img src="./asset/img/game_g2g.png" alt="게임기 2" /></div>
+    </main>
+  </body>
+</html>

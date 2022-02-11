@@ -1,0 +1,243 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: #222;
+}
+.nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 2vw;
+  background-color: #222;
+  padding: 10px;
+  border-bottom: 1px solid lightslategray;
+  opacity: 2;
+}
+/* 햄버거 css */
+.ham {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+.ham span {
+  display: flex;
+  position: relative;
+  height: 4px;
+  width: 30px;
+  margin: 7px;
+  transition: all 0.3s;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.ham .fi {
+  transition-delay: 500ms;
+}
+
+.ham .th {
+  transition-delay: 200ms;
+}
+
+.ham .se {
+  transition-delay: 800ms;
+}
+.ham .fi {
+  transition-delay: 500ms;
+}
+
+.ham .th {
+  transition-delay: 200ms;
+}
+
+.ham .se {
+  transition-delay: 800ms;
+}
+
+.ham:hover .fi {
+  transform: translate(40px, 5px) rotate(45deg);
+  width: 20px;
+}
+
+.ham:hover .th {
+  width: 50px;
+  transform: rotate(180deg);
+}
+
+.ham:hover .se {
+  width: 20px;
+  transform: translate(40px, -5px) rotate(-765deg);
+}
+
+.ham2 {
+  display: flex;
+  cursor: pointer;
+  width: 30px;
+  margin: 10px;
+  margin-left: 30px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ham2 > i {
+  font-size: 30px;
+}
+/* 햄버거 css 끝 */
+/* 네비 메뉴 */
+.nav_memu {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: 85%;
+  width: auto;
+  height: auto;
+}
+.nav_memu span {
+  color: #fff;
+  cursor: pointer;
+  margin-left: 5px;
+}
+/* 메인 구간*/
+.main_one {
+  margin-top: 100px;
+  font-family: SpoqaHanSans;
+  font-size: 50px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #efefef;
+  height: 30%;
+}
+.main_search_inp {
+  position: relative;
+  left: 5%;
+  width: 30%;
+  height: 52px;
+  margin: 64px 277px 30px 76px;
+  padding: 0 0 0 40px;
+  border-radius: 100px;
+  background-color: #fff;
+}
+.main_search_btn {
+  position: absolute;
+  left: 43%;
+  top: 233px;
+  width: 52px;
+  height: 52px;
+  flex-grow: 0;
+  margin: 0 0 0 396px;
+  padding: 18px;
+  border-radius: 100px;
+  background-color: #3040ff;
+  border: #3040ff 1px solid;
+}
+.main_two {
+  font-family: SpoqaHanSans;
+  font-size: 50px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #efefef;
+  height: 30%;
+}
+.main_two_in {
+  width: 80vw;
+  margin: auto;
+  padding: auto;
+}
+.main_two_gameBtn {
+  width: 50vw;
+  position: relative;
+  left: 3vw;
+}
+.gameBtn {
+  color: rgb(129, 127, 127);
+  width: 120px;
+  height: 40px;
+  margin: 0 10px 0 0;
+  padding: 8px 17px;
+  border-radius: 100px;
+  border: solid 1px rgb(129, 127, 127);
+  cursor: pointer;
+}
+.filter_main_container {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.filter_box div {
+  border-top: 1px solid rgb(129, 127, 127);
+  display: flex;
+  height: 12vw;
+  padding: 20px 0px;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.filter_main_container span {
+  position: relative;
+  width: 100%;
+  background-color: #222;
+  font-size: 20px;
+  display: block;
+}
+.filter_box img {
+  display: block;
+  width: 406px;
+  height: 228px;
+  flex-grow: 0;
+  margin: 9px 0 0;
+  object-fit: contain;
+}
+.main_three {
+  font-size: 50px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #efefef;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+}
+.view {
+  margin-top: 100px;
+  background-color: black;
+  width: 30vw;
+  height: 30vw;
+  position: relative;
+  border: 1px white solid;
+  border-radius: 3px;
+}
+.view_text {
+  text-align: center;
+  background-color: black;
+}
+.view iframe {
+  background-color: antiquewhite;
+  position: relative;
+  width: 30vw;
+  height: 26.5vw;
+  border-radius: 3px;
+  opacity: 1;
+}
+.main_four {
+  font-size: 50px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #efefef;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+}
+.controller {
+}

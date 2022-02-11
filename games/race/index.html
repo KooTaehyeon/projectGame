@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="button.css">
+    <script src="https://kit.fontawesome.com/334023ee88.js"></script>
+    <script src="main.js" defer></script>
+
+</head>
+
+<body>
+    <!-- 캐릭터 select 돈걸기  -->
+    <div>
+        <div class="frends">
+            <button type="button" class="rionBtn"></button>
+            <button type="button" class="apech"></button>
+            <button type="button" class="muzi"></button>
+            <button type="button" class="neo"></button>
+        </div>
+
+      
+
+        <!-- 정의 -->
+        <div style="position: absolute; left: 0px; top: 10px;" id="img1"> <img class="kakaoimg" src="rion2.gif" id="race1"></div>
+        <div style="position: absolute; left: 0px; top: 100px;" id="img2"><img class="kakaoimg" src="apech2.gif" id="race2"></div>
+        <div style="position: absolute; left: 0px; top: 180px;" id="img3"><img class="kakaoimg" src="muzi2.gif" id="race3"></div>
+        <div style="position: absolute; left: 0px; top: 260px;" id="img4"><img class="kakaoimg" src="neo2.gif" id="race4"></div>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <!-- 경기장 정의 -->
+                        <img src="track.jpg" width="818px" height="350px" id="bk2"
+                            style="display: block; margin-left: -30px;">
+                        <span><img src="png.png" alt="" id="finish"></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+          <!-- 상태창 -->
+          <div class="status">
+            <span><input type="value" id="s1">배팅액</span>
+            <span><input type="value" id="s2">우승상금</span>
+            <span><input type="value" id="s3">현재잔액</span>
+        </div>
+        <div id="btnChun">
+
+            <button type="button" onclick="gogo();" value=" start " id="btn">
+                <!-- style="position: absolute; top:520px; width: 100px; height: 100px;"> -->
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Start
+             <!-- <span><img src="chun.gif" alt="" id="chunsik"></span> -->
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100vh;
+}
+
+/* 게임 시작 전 */
+.game_setting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+.game_input {
+  width: 300px;
+  height: 45px;
+  border-radius: 8px;
+  border: none;
+  font-size: 24px;
+  text-align: center;
+}
+
+.game_money {
+  height: 32px;
+  border: none;
+  border-radius: 8px;
+  color: #ebf5cf;
+  background-color: #225c69;
+  font-size: 18px;
+  text-align: center;
+}
+
+.game_btn {
+  width: 200px;
+  height: 60px;
+  padding: 5px 10px;
+  font-size: 24px;
+  border-radius: 8px;
+  border: none;
+  color: #ebf5cf;
+  background-color: #b36132;
+  letter-spacing: 4px;
+  cursor: pointer;
+  transition: all 300ms ease-in;
+}
+
+.game_btn:hover {
+  transform: scale(1.4);
+}
+
+/* 게임 시작 후 */
+
+.startGame {
+  display: none;
+  height: 100%;
+}
+
+.startGame_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  /* height: 100%; */
+}
+
+.startGame_menu h3 {
+  margin: 5px;
+  letter-spacing: 4px;
+  color: white;
+}
+
+.num {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 50%;
+  margin: 0 5px;
+  box-shadow: 4px 4px 4px black;
+}
+
+.gainNum {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 50%;
+  margin: 0 5px;
+  box-shadow: 4px 4px 4px black;
+}
+
+.pointNum {
+  font-size: 28px;
+  color: #005c74;
+}
+
+.result {
+  opacity: 0;
+  text-align: center;
+  transition: all 300ms ease-in;
+}
