@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>게임</title>
     <link rel="stylesheet" href="./indexs.css" />
+    <script src="./app/main.js" defer></script>
+    <script src="./app/filter.js" defer></script>
+    <script src="./app/chat.js" defer></script>
+    <script src="./app/calcul.js" defer></script>
   </head>
 
   <body>
@@ -25,8 +29,10 @@
     <main class="main_one">
       <span class="main_title"> 다양한 게임이 준비되어 있습니다. </span>
       <div class="main_search">
-        <input type="text" id="" class="main_search_inp" placeholder="게임이름을 검색하세요" />
-        <button type="button" id="" class="main_search_btn">쿡</button>
+        <input type="text" id="gameConsole" class="main_search_inp" placeholder="게임이름을 검색하세요" />
+        <button type="button" class="main_search_btn">
+          <img src="./asset/img/c2fc8e49-5165-4a59-8d52-9b1171c95f61.svg" alt="" />
+        </button>
       </div>
       <div class="main_one_img"><img src="./asset/img/game_gg.png" alt="게임기" /></div>
     </main>
@@ -104,6 +110,11 @@
     </main>
     <main class="main_four">
       <div class="controller"><img src="./asset/img/game_g2g.png" alt="게임기 2" /></div>
+      <button type="button" id="beforeGame" class="main_four_pre_btn">Pre</button>
+      <button type="button" id="nextGame" class="main_four_next_btn">Next</button>
+      <button type="button" id="calculate" class="main_four_cl">
+        <img src="./asset/img/caaaa.svg" alt="계산기" />
+      </button>
     </main>
     <!-- 챗봇  -->
     <aside>

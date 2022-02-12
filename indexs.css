@@ -11,7 +11,7 @@
   background-color: #222;
   padding: 10px;
   border-bottom: 1px solid lightslategray;
-  opacity: 2;
+  z-index: 2;
   background: #222;
 }
 /* 햄버거 css */
@@ -111,17 +111,16 @@
   height: 30%;
 }
 .main_search_inp {
-  position: relative;
-  left: 5%;
   width: 30%;
   height: 52px;
-  margin: 64px 277px 30px 76px;
+  margin-top: 63px;
   padding: 0 0 0 40px;
   border-radius: 100px;
   background-color: #fff;
 }
 .main_search_btn {
   position: absolute;
+  z-index: 0;
   left: 43%;
   top: 233px;
   width: 52px;
@@ -132,6 +131,10 @@
   border-radius: 100px;
   background-color: #3040ff;
   border: #3040ff 1px solid;
+  cursor: pointer;
+}
+.main_search_btn img {
+  background-color: #3040ff;
 }
 .main_two {
   font-family: SpoqaHanSans;
@@ -179,6 +182,10 @@
   padding: 20px 0px;
   flex-direction: column;
   margin-top: 100px;
+  cursor: pointer;
+}
+.filter_box div:hover {
+  border-top: 1px solid rgb(165, 46, 46);
 }
 .filter_main_container span {
   width: 100%;
@@ -242,16 +249,16 @@
 aside {
   position: fixed;
   top: 240px;
-  right: 1%;
+  right: 2%;
   width: 14vw;
   height: auto;
   border-radius: 5px;
   z-index: 1000;
+  color: white;
 }
 
 .aside_wrap {
-  background-color: rgba(226, 226, 226, 0.644);
-  border: 3px solid rgba(226, 226, 226, 0.089);
+  border: 1px solid rgba(226, 226, 226);
   border-radius: 5px;
   display: none;
   position: relative;
@@ -288,12 +295,13 @@ aside {
 .inp_box {
   flex-wrap: nowrap;
   height: 2vw;
-  width: 13vw;
+  width: 12vw;
   margin: 10px;
   padding: 5px;
 }
 .game_ex_inp {
   border: 1px white solid;
+  color: white;
   width: 9vw;
 }
 
@@ -422,4 +430,48 @@ aside {
   font-size: 20px;
   font-weight: bold;
   line-height: 30px;
+}
+/* 게임 버튼 */
+.main_four_pre_btn {
+  position: absolute;
+  top: 322.5%;
+  right: 54.8%;
+  width: 60px;
+  height: 56px;
+  opacity: 1;
+  background-color: #c8e904;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 25px;
+  text-align: center;
+}
+.main_four_next_btn {
+  position: absolute;
+  top: 322.5%;
+  right: 42.5%;
+  width: 60px;
+  height: 56px;
+  opacity: 1;
+  background-color: #c8e904;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 25px;
+  text-align: center;
+}
+.main_four_cl {
+  position: absolute;
+  top: 325.5%;
+  right: 49.2%;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  background-color: #c8e904;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 25px;
+  text-align: center;
+}
+.main_four_cl img {
+  height: 20px;
+  width: 20px;
 }

@@ -1,7 +1,7 @@
 const gameSelect = document.querySelector('.game_select');
 const gameNext = document.querySelector('#nextGame');
 const gameBefore = document.querySelector('#beforeGame');
-
+console.log(gameSelect);
 const gameList = ['baseball', 'catch', 'race', 'lotto', 'RSP', 'upDown', 'woup', 'carrot'];
 
 gameNext.onclick = function () {
@@ -34,6 +34,7 @@ gameBefore.onclick = function () {
     }
   }
 };
+const calculate = document.querySelector('#calculate');
 
 calculate.onclick = function () {
   const modal1 = document.querySelector('.calculate');
@@ -49,6 +50,7 @@ document.querySelector('.cancle_btn').onclick = function () {
 //필터를 이용한 window.scrollTo 구현
 const filterSelect = document.querySelectorAll('.filter_main_container>a');
 const viewSet = gameView.offsetLeft;
+console.log(filterSelect);
 for (let i = 0; i < filterSelect.length; i++) {
   filterSelect[i].onclick = function (e) {
     const selected = e.currentTarget.id;

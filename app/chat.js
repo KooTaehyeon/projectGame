@@ -1,6 +1,6 @@
 const gameinp = document.getElementById('gameConsole');
 const gameText = document.querySelector('.geme_ex_text>p');
-
+const txtBtn = document.querySelector('#txtBtn');
 txtBtn.addEventListener('click', gameExp);
 function gameExp() {
   if (gameinp.value.trim() == '') {

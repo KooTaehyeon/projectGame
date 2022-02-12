@@ -30,8 +30,8 @@ function gameFilter3() {
 
 const boxGame = document.querySelectorAll('.filter_box');
 
-const search = document.querySelector('.filterSearch');
-const searchBtn = document.querySelector('.searchBtn');
+const search = document.querySelector('.main_search_inp');
+const searchBtn = document.querySelector('.main_search_btn');
 
 // 검색기능
 
@@ -47,10 +47,6 @@ searchBtn.addEventListener('click', function (e) {
       return;
     } else if (boxGame[i].innerText.includes(`${search.value}`)) {
       filterE[i].style.display = 'block';
-<<<<<<< HEAD
-=======
-  
->>>>>>> a5814277474a3ee105111a22d815e4790546be2f
     } else {
       filterE[i].style.display = 'none';
     }
