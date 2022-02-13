@@ -34,28 +34,28 @@ gameBefore.onclick = function () {
     }
   }
 };
-const calculate = document.querySelector('#calculate');
+// const calculate = document.querySelector('#calculate');
 
-calculate.onclick = function () {
-  const modal1 = document.querySelector('.calculate');
-  modal1.classList.add('active');
-};
+// calculate.onclick = function () {
+//   const modal1 = document.querySelector('.calculate');
+//   modal1.classList.add('active');
+// };
 
-document.querySelector('.cancle_btn').onclick = function () {
-  const modal1 = document.querySelector('.calculate');
-  modal1.classList.remove('active');
-};
+// document.querySelector('.cancle_btn').onclick = function () {
+//   const modal1 = document.querySelector('.calculate');
+//   modal1.classList.remove('active');
+// };
 
 //필터를 이용해 게임 띄워주기
 //필터를 이용한 window.scrollTo 구현
-const filterSelect = document.querySelectorAll('.filter_main_container>a');
+const filterSelect = document.querySelectorAll('.filter_box');
 const viewSet = gameView.offsetLeft;
-console.log(filterSelect);
+console.log('찾음 ', filterSelect, viewSet);
 for (let i = 0; i < filterSelect.length; i++) {
   filterSelect[i].onclick = function (e) {
     const selected = e.currentTarget.id;
     gameSelect['src'] = `./games/${selected}`;
-    game_machine.scrollIntoView({ behavior: 'smooth' });
+    gameView.scrollIntoView({ behavior: 'smooth' });
   };
 }
 

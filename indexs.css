@@ -434,7 +434,7 @@ aside {
 /* 게임 버튼 */
 .main_four_pre_btn {
   position: absolute;
-  top: 322.5%;
+  top: 303.3%;
   right: 54.8%;
   width: 60px;
   height: 56px;
@@ -447,7 +447,7 @@ aside {
 }
 .main_four_next_btn {
   position: absolute;
-  top: 322.5%;
+  top: 303.3%;
   right: 42.5%;
   width: 60px;
   height: 56px;
@@ -460,7 +460,7 @@ aside {
 }
 .main_four_cl {
   position: absolute;
-  top: 325.5%;
+  top: 306.5%;
   right: 49.2%;
   width: 40px;
   height: 40px;
