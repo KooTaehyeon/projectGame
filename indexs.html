@@ -10,20 +10,44 @@
     <script src="./app/filter.js" defer></script>
     <script src="./app/chat.js" defer></script>
     <script src="./app/calcul.js" defer></script>
+    <script src="./app/nav.js" defer></script>
   </head>
 
   <body>
     <div class="nav">
-      <div class="ham">
+      <!-- <div class="ham">
         <span class="fi"></span>
         <span class="th"></span>
         <span class="se"></span>
-      </div>
+      </div> -->
       <div class="nav_memu">
-        <span>새소식</span>
-        <span>가이드</span>
-        <span>충전소</span>
-        <span>커뮤니티</span>
+        <ul class="nav_memu_ul">
+          <li class="nav_memu_li">새소식</li>
+
+          <li class="nav_memu_li">가이드</li>
+
+          <li class="nav_memu_li">충전소</li>
+
+          <li class="nav_memu_li">커뮤니티</li>
+        </ul>
+      </div>
+      <div class="memu_drop_toggle">
+        <ul class="drop_memu">
+          <li>공지사항</li>
+          <li>업데이트</li>
+          <li>이벤트</li>
+        </ul>
+        <ul class="drop_memu">
+          <li>안내글</li>
+          <li>게임소개</li>
+        </ul>
+        <ul class="drop_memu">
+          <li>안내</li>
+        </ul>
+        <ul class="drop_memu">
+          <li>환전</li>
+          <li>캐쉬샵</li>
+        </ul>
       </div>
     </div>
     <main class="main_one">
@@ -39,7 +63,7 @@
     <main class="main_two">
       <div class="main_two_in">
         <div class="main_two_gameBtn">
-          <button class="filter_btn_1 gameBtn" id="btnAll">전체</button>
+          <button class="filter_btn_1 gameBtn btn_color" id="btnAll">전체</button>
           <button class="filter_btn_2 gameBtn" id="btns1">확률</button>
           <button class="filter_btn_3 gameBtn" id="btns2">캐쥬얼</button>
           <button class="filter_btn_4 gameBtn" id="btns3">스포츠</button>
@@ -102,7 +126,7 @@
         </div>
       </div>
     </main>
-    <main class="main_three">
+    <main class="main_three" id="main_three">
       <div class="view">
         <div class="view_text">Game Start</div>
         <iframe id="gameView" src="./games/catch/" frameborder="0" class="game_select"></iframe>
@@ -140,5 +164,51 @@
         </form>
       </div>
     </aside>
+    <!-- 계산기 -->
+    <div class="calculate">
+      <span class="cancle_btn">X</span>
+      <table id="casio">
+        <thead>
+          <tr>
+            <td colspan="4" id="casioHead"></td>
+          </tr>
+          <tr>
+            <td colspan="4" id="casioInput"></td>
+          </tr>
+        </thead>
+
+        <tbody class="table_body">
+          <tr>
+            <td colspan="3">
+              <button class="Btn" id="casioReset">C</button>
+            </td>
+            <td><button class="casio_num Btn">/</button></td>
+          </tr>
+          <tr class="casio_body">
+            <td><button class="casio_num Btn">7</button></td>
+            <td><button class="casio_num Btn">8</button></td>
+            <td><button class="casio_num Btn">9</button></td>
+            <td><button class="casio_num Btn">*</button></td>
+          </tr>
+          <tr class="casio_body">
+            <td><button class="casio_num Btn">4</button></td>
+            <td><button class="casio_num Btn">5</button></td>
+            <td><button class="casio_num Btn">6</button></td>
+            <td><button class="casio_num Btn">+</button></td>
+          </tr>
+          <tr class="casio_body">
+            <td><button class="casio_num Btn">1</button></td>
+            <td><button class="casio_num Btn">2</button></td>
+            <td><button class="casio_num Btn">3</button></td>
+            <td><button class="casio_num Btn">-</button></td>
+          </tr>
+          <tr class="casio_body">
+            <td colspan="2"><button class="casio_num Btn">0</button></td>
+            <td><button class="casio_num Btn">.</button></td>
+            <td><button class="Btn" id="casioResult">=</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>

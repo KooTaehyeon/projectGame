@@ -34,12 +34,12 @@ gameBefore.onclick = function () {
     }
   }
 };
-// const calculate = document.querySelector('#calculate');
+const calculate = document.querySelector('#calculate');
 
-// calculate.onclick = function () {
-//   const modal1 = document.querySelector('.calculate');
-//   modal1.classList.add('active');
-// };
+calculate.onclick = function () {
+  const modal1 = document.querySelector('.calculate');
+  modal1.classList.toggle('active');
+};
 
 // document.querySelector('.cancle_btn').onclick = function () {
 //   const modal1 = document.querySelector('.calculate');
@@ -49,21 +49,16 @@ gameBefore.onclick = function () {
 //필터를 이용해 게임 띄워주기
 //필터를 이용한 window.scrollTo 구현
 const filterSelect = document.querySelectorAll('.filter_box');
-const viewSet = gameView.offsetLeft;
-console.log('찾음 ', filterSelect, viewSet);
+// const viewSet = gameView.offsetTop + 500;
+// console.log(viewSet);
+// console.log('찾음 ', filterSelect, viewSet);
 for (let i = 0; i < filterSelect.length; i++) {
   filterSelect[i].onclick = function (e) {
     const selected = e.currentTarget.id;
     gameSelect['src'] = `./games/${selected}`;
-    gameView.scrollIntoView({ behavior: 'smooth' });
+    main_three.scrollIntoView({ behavior: 'smooth' });
   };
 }
-
-// 버튼 누르면 게임분류창으로 이동 js
-const filter_down = document.querySelector('.cell_down');
-filter_down.onclick = function () {
-  filterGame.scrollIntoView({ behavior: 'smooth' });
-};
 
 // arrow text
 const arrows = document.querySelectorAll('.arrow');

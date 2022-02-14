@@ -11,28 +11,26 @@ body {
 /*/////////////////// scene */
 
 .text {
-  left: 85%;
+  left: 50%;
   position: absolute;
   transform: translateX(-50%);
   font-size: 2.5em;
   margin: 0;
   opacity: 0.3;
   text-align: center;
-  top: 250px;
+  top: 30px;
   width: 80%;
 }
-.text_on{
+.text_on {
   animation: texts 2s infinite;
-  transform: scale(1.2);  
+  transform: scale(1.2);
 }
-@keyframes texts{
-  50%{
-    color:white
-    
+@keyframes texts {
+  50% {
+    color: white;
   }
-  90%{
-    color :black;
-
+  90% {
+    color: black;
   }
 }
 
@@ -488,7 +486,7 @@ body {
   border-radius: 6px;
   background-color: coral;
   width: 10vw;
-  height: 3vw;
+  height: 4vw;
   cursor: pointer;
 }
 .weapon_btn:hover {
@@ -497,9 +495,9 @@ body {
 .momey_group {
   position: absolute;
   top: 400px;
-  right: 10%;
+  right: 8%;
   border: 1px solid;
   color: white;
   border-radius: 5px;
-  width: 20vw;
+  width: 25vw;
 }
