@@ -24,7 +24,7 @@ function gameExp() {
       '가위는 보를이기고 바위에게 지고' +
       '바위는 가위를이기고 보에게 지고 보는 바위를이기고 가위한테 지는' +
       '그런 게임입니다.';
-  } else if (gameinp.value) {
+  } else {
     gameText.innerText = '제대로 적어줄래요?';
   }
 }
